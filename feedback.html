@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+<body ng-app="" bgcolor="pink">
+
+<p><H1>FEEDBACK FORM</H1></p>
+
+<form name="myForm">
+<br>
+<p>Name:
+<input name="myName" ng-model="myName" required>
+<span ng-show="myForm.myName.$touched && myForm.myName.$invalid">This field is required.</span>
+</p>
+<br>
+<p>Address:
+<input name="myAddress" ng-model="myAddress" required>
+<span ng-show="myForm.myAddress.$touched && myForm.myAddress.$invalid">This field is required.</span>
+</p>
+<br>
+<p>Mail-Id:
+<input name="mail" ng-model="mail" required>
+<span ng-show="myForm.mail.$touched && myForm.mail.$invalid">This field is required.</span>
+</p>
+<br>
+<p>RATING:			
+</h2><br>
+<input type="radio" name="0*" value="0*">0*<br>
+<input type="radio" name="1*" value="1*">1*<br>  
+<input type="radio" name="2*" value="2*">2*<br>
+<input type="radio" name="3*" value="3*">3*<br>
+<input type="radio" name="4*" value="4*">4*<br>
+<input type="radio" name="5*" value="0*">5*<br>	
+</p>
+<br>
+<p>Number of books read:
+<input name="books" ng-model="books" required>
+<span ng-show="myForm.books.$touched && myForm.books.$invalid">This field is required.</span>
+</p>
+<br> 
+<p>What do you think of us?
+<input name="comment" ng-model="comment" required>
+<span ng-show="myForm.comment.$touched && myForm.comment.$invalid">This field is required.</span>
+</p> 
+<h1><p style="text-align:right"><a href="recorded.html">RECORD FEEDBACK</a></p></h1>
+</form>
+<p style="text-align:left">DESIGNED BY MYTHRAVARSHINI</P>
+
+</body>
+</html>
